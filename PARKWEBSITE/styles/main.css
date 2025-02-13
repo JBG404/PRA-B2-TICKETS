@@ -44,6 +44,7 @@ header{
   animation: fadein 4s;
 }
 
+
 .logo{
   margin: 0 auto;
   width: 512px;
@@ -185,7 +186,13 @@ button{
 }
 
 .sidy-by-side{
+  display: flex;
+  flex-wrap: wrap; /* Zorgt ervoor dat de elementen doorlopen naar een volgende regel indien nodig */
+  gap: 1em; /* Ruimte tussen de elementen */
+  justify-content: space-between; /* Verspreidt de elementen netjes over de beschikbare ruimte */
+  align-items: flex-start; /* Zorgt dat de elementen bovenaan uitgelijnd zijn */
 }
+
 
 .description{
   flex: 1;
@@ -287,6 +294,7 @@ to   { opacity: 1; }
 from { opacity: 0; }
 to   { opacity: 1; }
 }
+<<<<<<< Updated upstream
 
 .emphasize {
   border-left: 5px solid #27AE60;
@@ -299,3 +307,43 @@ to   { opacity: 1; }
   border-left: none;
   text-align: center;
 }
+=======
+/*  Afgesproken kleuren:
+    * Lichte achtergrond: #FCFCFC
+    * Medium achtergrond: #CCCCCC
+    * Donkere achtergrond: #303030
+    * Primaire kleur: #27AE60
+    * Secundaire kleur: #2F80ED
+*/
+
+.row, .row-below {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5em;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.row article, .row-below article {
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  padding: 1em;
+}
+
+/* Maak de onderste rij ook naast elkaar */
+.row-below {
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .row, .row-below {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+>>>>>>> Stashed changes
