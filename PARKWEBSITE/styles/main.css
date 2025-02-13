@@ -111,15 +111,43 @@ article h2{
 }
 article h2.fun-for-family{
   background-image: url('../images/family-fun-george-arthur-pflueger.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
 }
 article h2.accessibility{
   background-image: url('../images/accessible-eunice-stahl.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
 }
 article h2.rides{
   background-image: url('../images/drone-drew-dau.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
 }
 article h2.open-forever{
   background-image: url('../images/open-james-lee.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
 }
 
 .product{
@@ -149,6 +177,7 @@ button{
   border: 2px solid #FCFCFC;
   color: #000000;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .payment-option{
@@ -186,6 +215,12 @@ footer{
 */
 
 @media (max-width: 480px) {
+  .hidden-on-lg{
+    display: block
+  }
+  .hidden-on-sm{
+    display: none
+  }
 
 }
 
@@ -251,4 +286,16 @@ to   { opacity: 1; }
 @-o-keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
+}
+
+.emphasize {
+  border-left: 5px solid #27AE60;
+  box-shadow: 1px 0px 5px #27AE60;
+  padding: 1em;
+}
+
+.emphasize h2 {
+  margin: 0;
+  border-left: none;
+  text-align: center;
 }
