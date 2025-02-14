@@ -151,6 +151,40 @@ article h2.open-forever{
 
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  border-bottom: 2px solid #000;
+}
+
+tfoot td {
+  font-weight: bold;
+  padding-top: 10px; 
+}
+
+
+.product-listing{
+  display: flex;
+}
+.product-text{
+  display: flex;
+  flex-direction: column;
+}
+.product-text p{
+  margin: 0;
+}
+.product-listing span{
+  font-weight: bold;
+}
+
 .product{
   margin-right: 1em;
   padding: 1em;
@@ -220,6 +254,13 @@ footer{
   ##Screen = B/w 320px to 479px
   Bron: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
 */
+
+@media (max-width: 480px) {
+  .product-listing{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 480px) {
   .hidden-on-lg{

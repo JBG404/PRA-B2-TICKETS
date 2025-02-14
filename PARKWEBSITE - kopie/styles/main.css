@@ -1,0 +1,361 @@
+/*
+  Afgesproken kleuren:
+
+    * Lichte achtergrond: #FCFCFC
+    * Medium achtergrond: #CCCCCC
+    * Donkere achtergrond: #303030
+
+    * Primaire kleur: #27AE60
+    * Secundaire kleur: #2F80ED
+*/
+
+body, html{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #FCFCFC;
+}
+
+.wrapper{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  background: url('../images/park01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #CCCCCC;
+}
+
+.header-content{
+  padding: 1em;
+
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  /* Deze animatie wordt onder aan dit bestand gedefinieerd/aangemaakt */
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+
+.logo{
+  margin: 0 auto;
+  width: 512px;
+}
+
+h1{
+  margin: 0;
+  font-family: 'Heartbeat';
+  color: #27AE60;
+  text-shadow: 
+    3px 3px 0 #FCFCFC,
+    -1px -1px 0 #FCFCFC,  
+    1px -1px 0 #FCFCFC,
+    -1px 1px 0 #FCFCFC,
+    1px 1px 0 #FCFCFC;
+}
+
+h2{
+  border-left: 5px solid #27AE60;
+  padding-left: 10px;
+}
+
+main{
+  padding: 1em;
+}
+
+table{
+  margin-top: 1em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th{
+  text-align: start;
+}
+
+table thead, table tbody{
+  border-bottom: 1px solid #303030;
+}
+
+table th.slim{
+  width: 100px;
+}
+
+table tfoot{
+  font-weight: bold;
+}
+
+article{
+  border-left: 5px solid #27AE60;
+  padding-left: 10px;
+  margin: 1em 1em 1em 0;
+}
+article:last-of-type{
+  margin-right: 0;
+}
+
+article h2{
+  margin: 0;
+  padding: 1.5em;
+  border-left: none;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+article h2.fun-for-family{
+  background-image: url('../images/family-fun-george-arthur-pflueger.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
+}
+article h2.accessibility{
+  background-image: url('../images/accessible-eunice-stahl.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
+}
+article h2.rides{
+  background-image: url('../images/drone-drew-dau.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
+}
+article h2.open-forever{
+  background-image: url('../images/open-james-lee.jpg');
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
+}
+
+.product{
+  margin-right: 1em;
+  padding: 1em;
+  background: #CCCCCC;
+  text-align: center;
+}
+.product:last-of-type{
+  margin-right: 0;
+}
+
+.product span{
+  display: block;
+}
+.product img{
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+button{
+  width: 100%;
+  margin-top: 1em;
+  padding: .5em;
+  background: #27AE60;
+  border: 2px solid #FCFCFC;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-option{
+  height: 64px;
+}
+
+.sidy-by-side{
+  display: flex;
+  flex-wrap: wrap; /* Zorgt ervoor dat de elementen doorlopen naar een volgende regel indien nodig */
+  gap: 1em; /* Ruimte tussen de elementen */
+  justify-content: space-between; /* Verspreidt de elementen netjes over de beschikbare ruimte */
+  align-items: flex-start; /* Zorgt dat de elementen bovenaan uitgelijnd zijn */
+}
+
+
+.description{
+  flex: 1;
+}
+
+footer{
+  padding: 1em;
+  background: #303030;
+  color: #ffffff;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.hidden-on-lg{
+  display: none;
+}
+.hidden-on-sm{
+  display: block;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  Bron: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+*/
+
+@media (max-width: 480px) {
+  .hidden-on-lg{
+    display: block
+  }
+  .hidden-on-sm{
+    display: none
+  }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1024px) {
+  .logo{
+    margin: 0 auto;
+    width: 256px;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+  .sidy-by-side{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*
+  help! Het lettertype wordt om een of andere reden niet goed geladen... Misschien heeft het iets met het pad naar de fonts te maken?
+*/
+@font-face {
+  font-family: 'Heartbeat';
+  src:  url('../fonts/heartbeat.eot') format('eot'),
+        url('../fonts/heartbeat.otf') format('otf'),
+        url('../fonts/heartbeat.woff') format('woff'),
+        url('../fonts/heartbeat.svg') format('svg'),
+        url('../fonts/heartbeat.ttf') format('ttf');
+}
+
+/*
+  Animations for fading in logo on page load
+*/
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+
+.emphasize {
+  border-left: 5px solid #27AE60;
+  box-shadow: 1px 0px 5px #27AE60;
+  padding: 1em;
+}
+
+.emphasize h2 {
+  margin: 0;
+  border-left: none;
+  text-align: center;
+}
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+/*  Afgesproken kleuren:
+    * Lichte achtergrond: #FCFCFC
+    * Medium achtergrond: #CCCCCC
+    * Donkere achtergrond: #303030
+    * Primaire kleur: #27AE60
+    * Secundaire kleur: #2F80ED
+*/
+
+.row, .row-below {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5em;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.row article, .row-below article {
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  padding: 1em;
+}
+
+/* Maak de onderste rij ook naast elkaar */
+.row-below {
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .row, .row-below {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
